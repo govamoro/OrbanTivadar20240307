@@ -1,7 +1,14 @@
+div {
+    background: linear-gradient(to bottom, white, rgb(255, 250, 228));
+
+}
+
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th, td {
@@ -21,3 +28,12 @@ tbody tr:hover {
     background-color: #ddd;
 }
 
+.tulajdonsag {
+    font-weight: bold; 
+    font-size: 1.2em;
+}
+
+th {
+    font-weight: bold; 
+    font-size: 1.8em;
+}

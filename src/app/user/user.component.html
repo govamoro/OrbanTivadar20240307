@@ -1,4 +1,4 @@
-<p>Név: {{userData.name}}</p>
+<div>
 <table>
     <thead>
         <tr>
@@ -7,48 +7,41 @@
     </thead>
     <tbody>
         <tr>
-            <td>ID</td>
+            <td class="tulajdonsag">ID</td>
             <td>{{userData.id}}</td>
         </tr>
         <tr>
-            <td>Username</td>
+            <td class="tulajdonsag">Username</td>
             <td>{{userData.username}}</td>
         </tr>
         <tr>
-            <td>e-mail</td>
+            <td class="tulajdonsag">e-mail</td>
             <td>{{userData.email}}</td>
         </tr>
         <tr>
-            <td>Address</td>
-            <td>{{userData.address.city}}</td>
+            <td class="tulajdonsag">Address</td>
+            <td><pre>CITY: </pre>{{userData.address.city}}
+                <pre>STREET: </pre>{{userData.address.street}}
+                <pre>SUITE: </pre>{{userData.address.suite}}
+                <pre>ZIP: </pre>{{userData.address.zipcode}}
+                <pre>GEO: </pre>{{userData.address.geo.lat}}, {{userData.address.geo.lng}}
+            </td>
         </tr>
         <tr>
-            <td></td>
-            <td>{{userData.address.street}}</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>{{userData.address.suite}}</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>{{userData.address.zipcode}}</td>
-        </tr>
-        <tr>         
-            <td></td>
-            <td>{{userData.address.geo.lat}}</td>
-        </tr>
-        <tr>     
-            <td></td>
-            <td>{{userData.address.geo.lng}}</td>
-        </tr>
-        <tr>
-            <td>Phone</td>
+            <td class="tulajdonsag">Phone</td>
             <td>{{userData.phone}}</td>
         </tr>
         <tr>
-            <td>Website</td>
+            <td class="tulajdonsag">Website</td>
             <td>{{userData.website}}</td>
+        </tr>
+        <tr>
+            <td class="tulajdonsag">Company</td>
+            <td><pre>NAME: </pre>{{userData.company.name}}
+                <pre>PHRASE: </pre>{{userData.company.catchPhrase}}
+                <pre>BS: </pre>{{userData.company.bs}}
+            </td>
         </tr>
     </tbody>
 </table>
+</div>
